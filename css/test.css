@@ -1,0 +1,46 @@
+
+
+h2 {
+	color: #cc0066;
+	font-family: serif;
+	font-style: italic;
+}
+
+h1 {
+	color: blue;
+	text-align: center;
+}
+label {
+	color: green;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 50em;
+	width: 50em;
+    height: 50em;
+    background-color: #E0E0E0;
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 2em;
+    box-sizing: border-box;
+    width: 100%;
+}	
+
+.flex-item {
+	text-align: center;
+	width: 60%
+	float: left;
+
+}
+#footer {
+ 	margin-bottom: 50px;
+	bottom: 67em;
+}
+#perfectday{
+    width: 40px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
