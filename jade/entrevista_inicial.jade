@@ -1,0 +1,107 @@
+doctype html
+
+html(lang="en")
+	head
+		link(rel="stylesheet" type="text/css" href="../css/entrevista_inicial.css")
+		title Entrevista Inicial
+	body
+		h1 ENTREVISTA INICIAL
+		article
+			section#nombre
+				h4 Nombre del Participante:
+				select
+			section#fecha
+				h4 Fecha:
+				input(type="date")
+		article
+			section#problemas_iden
+				form
+					h2 Problemas Identificados:
+						table
+							tr
+								td
+									input(type="checkbox" name="id" value="general")
+									label(for="id") 5 Orientacion General
+								td
+									input(type="checkbox" name="id" value="live")
+									label(for="id") 5 Vivienda
+								td
+									input(type="checkbox" name="id" value="empleo")
+									label(for="id") 5 Falta de Empleo
+							tr
+								td
+									input(type="checkbox" name="id" value="baja")
+									label(for="id") 5 Baja Autoestima
+								td
+									input(type="checkbox" name="id" value="estres")
+									label(for="id") 5 Estres
+								td
+									input(type="checkbox" name="id" value="agresiva")
+									label(for="id") 5 Conducta Agresiva
+							tr
+									input(type="checkbox" name="id" value="hogar")
+									label(for="id") 5 Violencia en el Hogar
+								td
+									input(type="checkbox" name="id" value="menores")
+									label(for="id") 5 Maltrato a Menores
+								td
+									input(type="checkbox" name="id" value="embarazo")
+									label(for="id") 5 Embarazo Adolescente
+								td
+									input(type="checkbox" name="id" value="depresion")
+									label(for="id") 5 Depresion
+							tr
+									input(type="checkbox" name="id" value="familiar")
+									label(for="id") 5 Problemas Familiares
+								td
+									input(type="checkbox" name="id" value="maritales")
+									label(for="id") 5 Conflictos Maritales
+								td
+									input(type="checkbox" name="id" value="divorcio")
+									label(for="id") 5 Crisis de Divorcio
+								td
+									input(type="checkbox" name="id" value="alcohol")
+									label(for="id") 5 Abuso de Alcohol (propio, otras personas) 
+							tr
+								td
+									input(type="checkbox" name="id" value="drugs")
+									label(for="id") 5 Uso de Drogas Ilicitas
+								td
+									input(type="checkbox" name="id" value="")
+									label(for="id") 5 Problemas Financieros 
+								td
+									input(type="checkbox" name="id" value="")
+									label(for="id") 5 Desordenes Alimenticios
+							tr
+									input(type="checkbox" name="id" value="")
+									label(for="id") 5 Problemas Espirituales
+								td
+									input(type="checkbox" name="id" value="")
+									label(for="id") 5 Seguro Social
+								td
+									input(type="checkbox" name="id" value="")
+									label(for="id") 5 Problemas con Medicare
+								td
+									input(type="checkbox" name="id" value="")
+									label(for="id") 5 Problemas con Alguna Agencia Gubernamental
+								td
+									input(type="checkbox" name="id" value="")
+									label(for="id") 5 Otro:
+									input(type="text")
+
+			section#hist_sal
+				form
+					h2 Historial de Salud:
+						select
+							option(value="recibe") Recibe Tratamiento Actualmente
+							option(value="none") No Recibe Tratamiento Actualmente
+							input(type="text")
+			section#acc_tom
+				form
+					h2 Accion Tomada:
+					input(type="text")
+			section#pla_seg 
+				form
+					h2 Plan a Seguir:
+					input(type="text")
+

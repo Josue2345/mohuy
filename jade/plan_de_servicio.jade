@@ -1,0 +1,50 @@
+doctype html 
+
+html(lang="es")
+	head
+		link(rel="stylesheet" type="text/css" href="plan_de_servicio.css")
+		title Plan de Servicios
+	body 
+		h1 PLAN DE SERVICIOS
+		article
+			section#desc_gen_prob
+				form
+					h2 Describcion General Del Problema o la Situacion:
+					input(type="text")
+			section#ponderacion
+				form
+					h2 Ponderacion 
+						p 
+							label(for="concu") Factores Concurentes
+							input(type="text") 
+							label(for="critic") Factores Criticos
+							input(type="text") 
+							label(for="problem") Analisis del Problema o la Situacion desde un Marco Teorico:
+							input(type="text")
+			section#metas_participante 
+				form
+					h2 Metas (A mediano o Largo Plazo) del/la Participante en Orden de Prioridad:
+					input(type="text")
+			section#objetivo_est_tec
+				form
+					h2 Objetivos, Estrategias y Tecnicas a Ser Utilizadas  Durante la Intervencion
+						table(border="1")
+							tr 
+								th objetivo 
+								th Estrategias
+								th Tecnicas
+							tr 
+								td 
+									input(type="text") 
+								td 
+									input(type="text") 
+								td 
+									input(type="text")
+			section#mencionar_jus
+				form
+					h2 Mencionar y Justificar los Referidos que se Realizaran:
+					input(type="text")
+			section#metodos_evaluar
+				form
+					h2 Metodos para Evaluar el progreso del Mejoramiento del/la participante:
+					input(type="text")

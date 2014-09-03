@@ -1,0 +1,47 @@
+doctype html 
+
+html(lang="es")
+	head
+		link(rel="stylesheet" type="text/css" href="historial_soc_parti.css")
+		title Historial Social del Participante
+	body 
+		h1 HISTORIAL SOCIAL DEL Participante
+		article
+			section#motivo_ref
+				form
+					h2 Motivo del Referido:
+					input(type="text")
+			section#resumen_inter
+				form
+					h2 Resumen de Intervecion:
+					input(type="text")
+			section#historal_bio
+				form
+					h2 Historial Bio-Psicosocial:
+						p 
+							label(for="family") Historial Familiar:
+							input(type="text") 
+							label(for="academi") Historial Academico y Ocupacional
+							input(type="text") 
+							label(for="live") Vivienda
+							input(type="text") 
+							label(for="health") Historial de Salud Fisica
+							input(type="text") 
+							label(for="mental") Historial de Salud Mental
+							input(type="text")
+			section#ponderacion 
+				form
+					h2 Ponderacion:
+						p
+							label(for="general") Descripcion General del Problema:
+							input(type="text") 
+							label(for="factor") Factores Concurrentes:
+							input(type="text")
+							label(for="critic") Factores Criticos:
+							input(type="text")
+							label(for="problem") Analisis del Problema Desde un Marco teorico:
+							input(type="text")
+			section#recomendacion
+				form
+					h2 Recomendaciones:
+					input(type="text")

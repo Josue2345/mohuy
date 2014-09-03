@@ -1,0 +1,172 @@
+doctype html
+html(lang="es")
+	head
+		link(rel="stylesheet", type="text/css", href="participante.css")
+		title Datos Personales
+	body
+		article
+			section#datos_personales
+				form
+				h2 Datos Personales
+					p
+						label(for="name") Nombre:
+						input(type="text")
+					p
+						label(for="nickename") Apodo:
+						input(type="text")
+					p
+						label(for="direction") Direccion Residencial:
+						input(type="text")
+					p
+						label(for="postal") Postal:
+						input(type="text")
+					p
+						label(for="age") Edad:
+						input(type="number")
+					p
+						label(for="date") Fecha de Nacimiento:
+						input(type="date")
+					p
+						label Sexo:
+						input(type="radio" name="gender" value="male") 
+						label(for="gender") Male
+						input(type="radio" name="gender" value="female")
+						label(for="gender") Female
+					p
+						label Estado Civil:
+						input(type="radio" name="civil" value="solteria")
+						label(for="civil") soltero/a
+						input(type="radio" name="civil" value="casado")
+						label(for="civil") casado/a
+						input(type="radio" name="civil" value="divorciado")
+						label(for="civil") Divorciado/a
+						input(type="radio" name="civil" value="viudo")
+						label(for="civil") Viudo/a
+						input(type="radio" name="civil" value="jefedfam")
+						label(for="civil") Jefe de familia
+						input(type="radio" name="civil" value="consu")
+						label(for="civil") Consesual
+						input(type="radio" name="civil" value="separado")
+						label(for="civil") Separado/a
+					p
+						label Telefono:
+						label(for="phone") Tel. Casa
+						input(type="text")
+						label(for="phone") Celular
+						input(type="text")
+						label(for="phone") Trabajo
+						input(type="text")
+					p
+						label Escolaridad:
+						input(type="checkbox" name="school" value="elemental")
+						label(for="school") Escuela Elemenal
+						input(type="checkbox" name="school" value="intermedia")
+						label(for="school") Escuela Intermedia
+						input(type="checkbox" name="school" value="superior")
+						label(for="school") Escuela Superior
+						input(type="checkbox" name="school" value="gradoasoc")
+						label(for="school") Grado Asociado
+						input(type="checkbox" name="school" value="bachillerato")
+						label(for="school") Bachillerato
+						input(type="checkbox" name="school" value="maestria")
+						label(for="school") Maestria
+						input(type="checkbox" name="school" value="doctorado")
+						label(for="school") Doctorado
+						input(type="checkbox" name="school" value="none")
+						label(for="school") No Tiene Escolaridad
+						input(type="checkbox" name="school" value="other")
+						label(for="school") Otros:
+						input(type="text")
+					p
+						label(for="completogra") Grado completogra:
+						input(type="text")
+					p
+						label(for="estudioas") Escuela, Colegio o Universidad:
+						input(type="text")
+					p
+						label(for="profesion") Profesion:
+						input(type="text")
+					p
+						label(for="work") Lugar de Trabajo:
+						input(type="text")
+					p
+						label(for="religion") Afiliacion Religiosa:
+						input(type="text")
+					p
+						label(for="medic") Plan Medico:
+						input(type="text")
+					p
+						label Medicare:
+						input(type="checkbox" name="medicare" value="partea")
+						label(for="medicare") Parte A
+						input(type="checkbox" name="medicare" value="parteb")
+						label(for="medicare") Parte B
+						input(type="checkbox" name="medicare" value="partec")
+						label(for="medicare") Parte C
+						input(type="checkbox" name="medicare" value="complementario")
+						label(for="medicare") Complementario:
+						input(type="text")
+					p
+						label(for="exp") Fecha de Expiracion:
+						input(type="date")
+					p
+						label(for="fuentes") Fuente de Referido:
+						input(type="text")
+						label(for="phone") Telefono:
+						input(type="text")
+					p
+						label(for="nameen") Nombre  Encargado/a Tutoriar:
+						input(type="text") 
+						label(for="phone") Telefono
+						input(type="text")
+					p
+						label(for="person") Persona Contacto en Caso de Emergencia:
+						input(type="text")
+						label(for="phone") Telefono
+						input(type="text")
+					p
+						label(for="service") Servicio y/o Otras Agencias Envueltas
+						input(type="text")
+					p
+						label Fuentes de Ingresos:
+						input(type="checkbox" name="ingreso" value="sueldo")
+						label(for="ingreso") Sueldo
+						input(type="checkbox" name="ingreso" value="Ss") 
+						label(for="ingreso") Seguro Social
+						input(type="checkbox" name="ingreso" value="pension")
+						label(for="ingreso") Pension Alimenticia
+						input(type="checkbox" name="ingreso" value="bienestar")
+						label(for="ingreso") Bienestar
+						input(type="checkbox" name="ingreso" value="pan")
+						label(for="ingreso") PAN
+						input(type="checkbox" name="ingreso" value="rent")
+						label(for="ingreso") Rentas
+						input(type="checkbox" name="ingreso" value="desem")
+						label(for="ingreso") Desempleo
+						input(type="checkbox" name="ingreso" value="negpr") 
+						label(for="ingreso") Negocio Propio
+					p
+						label Estimado Mensual: $
+						input(type="text")
+			section#composicion_familiar
+				form
+					h2 Composicion familiar 
+						table(border="1")
+							tr 
+								th Nombres
+								th Edad
+								th Parentescos
+								th Ocupacion
+							tr
+								td 
+									input(type="text")
+								td
+									input(type="number")
+								td
+									input(type="text")
+								td
+									input(type="text")
+			section#motivo_de_consulta
+				form
+					h2 Motivo de consulta Segun El/La Participante: hello
+						input(type="text")

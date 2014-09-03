@@ -1,0 +1,44 @@
+doctype html 
+
+html(lang="es")
+	head
+		link(rel="stylesheet" type="text/css" href="nota_progreso.css")
+		title Nota de Progreso
+	body 
+		h1 NOTA DE PROGRESO
+		article
+			section
+				form
+					h4 Tipo de entrevista:
+						input(type="checkbox" name="interv" value="")
+						label(for="interv") Inicial
+						input(type="checkbox" name="interv" value="")
+						label(for="interv") Seguimiento
+						input(type="checkbox" name="interv" value="")
+						label(for="interv") Cierre
+						input(type="checkbox" name="interv" value="")
+						label(for="interv") Transferencia
+						input(type="checkbox" name="interv" value="")
+			section
+				from
+					h4 Fecha de la Entrvista
+					input(type="date")
+		article
+			section
+				form
+					h2 Resumen de Intervencion:
+					input(type="text")
+			section
+				form
+					h2 Acuerdos Tomados con el/la Participante:
+					input(type="text")
+			section 
+				form
+					h2 Ponderacion:
+						p 
+							label(for="concu") Factores Concurentes
+							input(type="text") 
+							label(for="critic") Factores Criticos
+							input(type="text")
+							label(for="ana_prob") Analisis del Problema o la Situacion desde un Marco Teorico:
+							input(type="text")
