@@ -1,46 +1,65 @@
 
 
-h2 {
-	color: #cc0066;
+div {
+	color: blue;
 	font-family: serif;
 	font-style: italic;
 }
 
-h1 {
+header {
 	color: blue;
 	text-align: center;
+	font-size: 2.5em;
 }
 label {
 	color: green;
 }
 
 .flex-container {
+	margin: 3;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+
 	justify-content: center;
-	height: 50em;
-	width: 50em;
-    height: 50em;
-    background-color: #E0E0E0;
-    box-shadow: 10px 10px 5px #888888;
-    border-radius: 2em;
-    box-sizing: border-box;
-    width: 100%;
+
 }	
 
-.flex-item {
-	text-align: center;
-	width: 60%
-	float: left;
+ .flex-item {
+  margin-top: 30px;
+  flex
 
-}
+  height: 100em;
+  width: 40em;
+  background-color: #E0E0E0;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 2em;
+  box-sizing: border-box;
+
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+ }
 #footer {
  	margin-bottom: 50px;
 	bottom: 67em;
 }
 #perfectday{
-    width: 40px;
     position: relative;
-    left: 0px;
-    top: 0px;
+    background-color: #BDBD9C;
+    text-decoration: bold;
 }
+.flex-item-tab {
+	display: inline;
+	display: table;
+	flex-grow: 2;
+	text-align: center;
+	width: 60%
+	float: left;
+}
+.line{
+	width: 50px;
+}
+
+.flex-container-par-tab{}

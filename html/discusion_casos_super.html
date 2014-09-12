@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="spanish">
   <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <link rel="stylesheet" type="text/css" href="../css/test.css">
-    <title>Discusión de Casos con el Supervisor</title>
+    <title>Discusion de Casos con el Supervisor</title>
   </head>
   <body>
-    <header>
-      <h1>DISCUSIÓN DE CASOS CON EL/LA SUPERVISOR/A</h1>
-    </header>
+    <header>DISCUSION DE CASOS CON EL/LA SUPERVISOR/A</header>
+    <article class="flex-container flex-item">
+      <section>
+        <h4>Nombre del Participante:</h4>
+        <select data-bind="value: name"></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date">
+      </section>
+    </article>
     <article class="flex-container">
-      <section class="flex-item"id="resume_de_la_sit">
+      <section class="flex-item">
         <form>
           <h2>Resumen de la Situación:</h2>
-          <textarea id="perfectday"></textarea>
+          <textarea></textarea>
         </form>
       </section>
-      <section class="flex-item" id="quien_es_afectado">
-        <form class="flex-item">
+      <section class="flex-item">
+        <form>
           <h2>¿Quién/es es/son la/s Persona/s Más Afectada/s con la Situación?:</h2>
-          <textarea id="perfectday"></textarea>
+          <textarea></textarea>
         </form>
       </section>
-      <section class="flex-item" id="recomendacion_trabajador">
-        <form class="flex-item">
-          <h2 >Recomendacion del/la Trabajador/a Social:</h2>
-          <textarea id="perfectday"></textarea>
+      <section class="flex-item">
+        <form>
+          <h2>Recomendacion del/la Trabajador/a Social:</h2>
+          <textarea></textarea>
         </form>
       </section>
-      <section id="recomendacion_supervisor">
-        <form class="flex-item">
-          <h2>Recomendaciones de/la Supervisor/a: </h2>
-          <textarea id="perfectday"></textarea>
+      <section class="flex-item">
+        <form>
+          <h2>Recomendaciones de/la Supervisor/a </h2>
+          <textarea></textarea>
         </form>
       </section>
     </article>
-    <footer id="footer"> hello</footer>
   </body>
 </html>

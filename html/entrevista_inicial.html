@@ -1,148 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="stylesheet" type="text/css" href="../css/test.css">
-		<title>Entrevista Inicial</title>
-	</head>
-	<body>
-		<h1>ENTREVISTA INICIAL</h1>
-		<article>
-			<section>
-				<h4>Nombre del Participante:</h4>
-				<select></select>
-			</section>
-			<section>
-				<h4>Fecha:</h4>
-				<input type="date">
-			</section>
-		</article>
-		<article>
-			<section id="problemas_iden">
-				<form>
-					<h2>Problemas Identificados:
-						<table>
-							<tr>
-								<td>
-								<input type="checkbox" name="id" value="general">
-								<label for="id">Orientacion General</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="live">
-								<label for="id">Vivienda</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="empleo">
-								<label for="id">Falta de Empleo</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-								<input type="checkbox" name="id" value="baja">
-								<label for="id">Baja Autoestima</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="estres">
-								<label for="id">Estres</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="agresiva">
-								<label for="id">Conducta Agresiva</label>
-								</td>
-							</tr>
-							<tr>
-								<input type="checkbox" name="id" value="hogar">
-								<label for="id">Violencia en el Hogar</label>
-							</tr>
-								<td>
-								<input type="checkbox" name="id" value="menores">
-								<label for="id">Maltrato a Menores</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="embarazo">
-								<label for="id">Embarazo Adolescente</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="depresion">
-								<label for="id">Depresion</label>
-								</td>
-							<tr>
-								<input type="checkbox" name="id" value="familiar">
-								<label for="id">Problemas Familiares</label>
-							</tr>
-								<td>
-								<input type="checkbox" name="id" value="maritales">
-								<label for="id">Conflictos Maritales</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="divorcio">
-								<label for="id">Crisis de Divorcio</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="alcohol">
-								<label for="id">Abuso de Alcohol (propio, otras personas) </label>
-								</td>
-							<tr>
-								<td>
-								<input type="checkbox" name="id" value="drugs">
-								<label for="id">Uso de Drogas Ilicitas</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="">
-								<label for="id">Problemas Financieros </label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="">
-								<label for="id">Desordenes Alimenticios</label>
-								</td>
-							</tr>
-							<tr>
-								<input type="checkbox" name="id" value="">
-								<label for="id">Problemas Espirituales</label>
-							</tr>
-								<td>
-								<input type="checkbox" name="id" value="">
-								<label for="id">Seguro Social</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="">
-								<label for="id">Problemas con Medicare</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="">
-								<label for="id">Problemas con Alguna Agencia Gubernamental</label>
-								</td>
-								<td>
-								<input type="checkbox" name="id" value="">
-								<label for="id">Otro:</label>
-								<input type="text">
-								</td>
-						</table>
-					</h2>
-				</form>
-			</section>
-			<section id="hist_sal">
-				<form>
-					<h2>Historial de Salud:
-					<select>
-						<option value="recibe">Recibe Tratamiento Actualmente</option>
-						<option value="none">No Recibe Tratamiento Actualmente</option>
-						<input type="text">
-					</select>
-					</h2>
-				</form>
-			</section>
-			<section id="acc_tom">
-				<form>
-					<h2>Accion Tomada:</h2>
-					<input type="text">
-				</form>
-			</section>
-			<section id="pla_seg"> 
-				<form>
-					<h2>Plan a Seguir:</h2>
-					<input type="text">
-				</form>
-			</section>
-		</article>
-	</body>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
+    <title>Entrevista Inicial</title>
+  </head>
+  <body>
+    <header>ENTREVISTA INICIAL</header>
+    <article class="flex-container flex-item">
+      <section>
+        <h4>Nombre del Participante:</h4>
+        <select></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date">
+      </section>
+    </article><br>
+    <article>
+      <section>
+        <form>
+          <table style="width:100%">
+            <thead>
+              <tr> 
+                <th>Problemas Indentificados:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="general">
+                  <label for="id"> Orientacion General</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="live">
+                  <label for="id"> Vivienda</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="empleo">
+                  <label for="id"> Falta de Empleo</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="baja">
+                  <label for="id"> Baja Autoestima</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="estres">
+                  <label for="id"> Estres</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="agresiva">
+                  <label for="id"> Conducta Agresiva</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="hogar">
+                  <label for="id"> Violencia en el Hogar</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="menores">
+                  <label for="id"> Maltrato a Menores</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="embarazo">
+                  <label for="id">Embarazo Adolescente</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="depresion">
+                  <label for="id"> Depresion</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="familiar">
+                  <label for="id"> Problemas Familiares</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="maritales">
+                  <label for="id"> Conflictos Maritales</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="divorcio">
+                  <label for="id"> Crisis de Divorcio</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="alcohol">
+                  <label for="id"> Abuso de Alcohol (propio, otras personas) </label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="drugs">
+                  <label for="id"> Uso de Drogas Ilicitas</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="finacieros">
+                  <label for="id"> Problemas Financieros </label>
+                </td>
+                <td> 
+                  <input type="checkbox" name="id" value="familiar">
+                  <label for="id">Problemas Familiares</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="Alimenticios">
+                  <label for="id"> Desordenes Alimenticion</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="Espirituales">
+                  <label for="id"> Problemas Espirituales</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="Social">
+                  <label for="id"> Seguro Social</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="Medicare">
+                  <label for="id"> Problemas con Medicare</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="id" value="Gubernamental">
+                  <label for="id"> Problemas con Alguna Agencia Gubernamental</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="id" value="otras">
+                  <label for="id"> Otro:</label>
+                  <input type="text">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </section>
+    </article>
+    <article class="flex-container">
+      <section class="flex-item">
+        <form>
+          <h2>Historial de Salud:
+            <select>
+              <option value="recibe">Recibe Tratamiento Actualmente</option>
+              <option value="none">No Recibe Tratamiento Actualmente</option>
+              <input type="text">
+            </select>
+          </h2>
+        </form>
+      </section>
+      <section class="flex-item">
+        <form>
+          <h2>Accion Tomada:</h2>
+          <input type="text">
+        </form>
+      </section>
+      <section class="flex-item"> 
+        <form>
+          <h2>Plan a Seguir:</h2>
+          <input type="text">
+        </form>
+      </section>
+    </article>
+  </body>
 </html>

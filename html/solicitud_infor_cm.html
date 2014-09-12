@@ -1,41 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <link rel="stylesheet" type="text/css" href="../css/test.css">
     <title>Solicitud de Informacion de la Congregacion Mita, Inc.</title>
   </head>
   <body>
-    <section>
-      <form>
-        <h2>Motivo de la Consulta:</h2>
-        <input type="text">
-      </form>
-    </section>
-    <section>
-      <form>
-        <h2>Informacion Acerca de la Institucion Educativa:
-          <p>
-            <label for="name">Nombre de la Institucion Educativa:</label>
-            <input type="text">
-            <label for="name">Recinto(si aplica):</label>
-            <input type="text">
-            <label for="name">Pueblo:</label>
-            <input type="text">
-            <label for="name">Titulo del Curso:</label>
-            <input type="text">
-            <label for="name">Profesor(a) que Ofrece el Curso:</label>
-            <input type="text">
-            <label for="name">Proposito del Trabajo:</label>
-            <input type="text">
-          </p>
-        </h2>
-      </form>
-    </section>
-    <section>
-      <form>
-        <h2>Accion Tomada:</h2>
-        <input type="text">
-      </form>
-    </section>
+    <header>SOLICITUD DE INFORMACIÓN DE LA CONGREGACIÓN MITA, INC.</header>
+    <article class="flex-container flex-item">
+      <section>
+        <h4>Nombre del Participante:</h4>
+        <select data-bind="value: name"></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date">
+      </section>
+    </article>
+    <article class="flex-container">
+      <section class="flex-item">
+        <form>
+          <h2>Motivo de la Consulta:</h2>
+          <textarea></textarea>
+        </form>
+      </section>
+      <section class="flex-item">
+        <form>
+          <h2>Información Acerca de la Institución Educativa:
+            <p>
+              <label for="name">Nombre de la Institución Educativa:</label>
+              <input type="text"><br>
+              <label for="name">Recinto(si aplica):</label>
+              <input type="text"><br>
+              <label for="name">Pueblo:</label>
+              <input type="text"><br>
+              <label for="name">Titulo del Curso:</label>
+              <input type="text"><br>
+              <label for="name">Profesor(a) que Ofrece el Curso:</label>
+              <input type="text"><br>
+              <label for="name">Propósito del Trabajo:</label>
+              <textarea></textarea>
+            </p>
+          </h2>
+        </form>
+      </section>
+      <section class="flex-item">
+        <form>
+          <h2>Acción Tomada:</h2>
+          <textarea></textarea>
+        </form>
+      </section>
+    </article>
   </body>
 </html>

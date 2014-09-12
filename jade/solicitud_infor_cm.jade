@@ -1,31 +1,46 @@
 doctype html
 
-html(lang="es")
+html
 	head
-		link(rel="stylesheet" type="text/css" href="solicitud_infor_CM.css")
+		meta(http-equiv="content-type" content="text/html;charset=utf-8")
+		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Solicitud de Informacion de la Congregacion Mita, Inc.
 	body
-		section
-			form
-				h2 Motivo de la Consulta:
-				input(type="text")
-		section
-			form
-				h2 Informacion Acerca de la Institucion Educativa:
-					p
-						label(for="name") Nombre de la Institucion Educativa:
-						input(type="text")
-						label(for="name") Recinto(si aplica):
-						input(type="text")
-						label(for="name") Pueblo:
-						input(type="text")
-						label(for="name") Titulo del Curso:
-						input(type="text")
-						label(for="name") Profesor(a) que Ofrece el Curso:
-						input(type="text")
-						label(for="name") Proposito del Trabajo:
-						input(type="text")
-		section
-			form
-				h2 Accion Tomada:
-				input(type="text")
+		header SOLICITUD DE INFORMACIÓN DE LA CONGREGACIÓN MITA, INC.
+		article.flex-container.flex-item
+			section
+				h4 Nombre del Participante:
+				select(data-bind="value: name")
+			section#fecha
+				h4 Fecha:
+				input(type="date")
+		article.flex-container
+			section.flex-item
+				form
+					h2 Motivo de la Consulta:
+					textarea
+			section.flex-item
+				form
+					h2 Información Acerca de la Institución Educativa:
+						p
+							label(for="name") Nombre de la Institución Educativa:
+							input(type="text")
+							br
+							label(for="name") Recinto(si aplica):
+							input(type="text")
+							br
+							label(for="name") Pueblo:
+							input(type="text")
+							br
+							label(for="name") Titulo del Curso:
+							input(type="text")
+							br
+							label(for="name") Profesor(a) que Ofrece el Curso:
+							input(type="text")
+							br
+							label(for="name") Propósito del Trabajo:
+							textarea
+			section.flex-item
+				form
+					h2 Acción Tomada:
+					textarea

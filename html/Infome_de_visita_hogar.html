@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <link rel="stylesheet" type="text/css" href="../css/test.css">
     <title>Informe de visita al hogar</title>
   </head>
   <body>
-    <h1>INFORME DE VISITA AL HOGAR:</h1>
-    <article>
-      <section id="resumen_de_inter">
+    <header>INFORME DE VISITA AL HOGAR:</header>
+    <article class="flex-container flex-item">
+      <section>
+        <h4>Nombre del Participante:</h4>
+        <select data-bind="value: name"></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date">
+      </section>
+    </article>
+    <article class="flex-container">
+      <section class="flex-item">
         <form>
           <h2>Resumen De Intervención:</h2>
-          <input type="text">
+          <textarea></textarea>
         </form>
       </section>
-      <section id="acuerdos_tomados">
+      <section class="flex-item">
         <form>
           <h2>Acuerdos Tomados Con El/La Participante:</h2>
-          <input type="text">
+          <textarea></textarea>
         </form>
       </section>
-      <section id="Ponderacion">
+      <section class="flex-item">
         <form>
           <h2>Ponderación:</h2>
-          <input type="text">
+          <textarea></textarea>
         </form>
       </section>
     </article>

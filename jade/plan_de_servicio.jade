@@ -1,50 +1,61 @@
 doctype html 
 
-html(lang="es")
+html
 	head
-		link(rel="stylesheet" type="text/css" href="plan_de_servicio.css")
+		meta(http-equiv="content-type" content="text/html;charset=utf-8")
+		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Plan de Servicios
 	body 
-		h1 PLAN DE SERVICIOS
-		article
-			section#desc_gen_prob
+		header PLAN DE SERVICIOS
+		article.flex-container.flex-item
+			section
+				h4 Nombre del Participante:
+				select(data-bind="value: name")
+			section#fecha
+				h4 Fecha:
+				input(type="date")
+		article.flex-container
+			section.flex-item
 				form
-					h2 Describcion General Del Problema o la Situacion:
-					input(type="text")
-			section#ponderacion
+					h2 Describción General Del Problema o la Situación:
+					textarea
+			section.flex-item
 				form
-					h2 Ponderacion 
+					h2 Ponderación 
 						p 
-							label(for="concu") Factores Concurentes
+							label(for="concu") Factores Concurentes:
 							input(type="text") 
-							label(for="critic") Factores Criticos
+							br
+							label(for="critic") Factores Críticos:
 							input(type="text") 
-							label(for="problem") Analisis del Problema o la Situacion desde un Marco Teorico:
+							br
+							label(for="problem") Análisis del Problema o la Situación desde un Marco Teórico:
 							input(type="text")
-			section#metas_participante 
+			section.flex-item 
 				form
 					h2 Metas (A mediano o Largo Plazo) del/la Participante en Orden de Prioridad:
 					input(type="text")
-			section#objetivo_est_tec
+			section
 				form
-					h2 Objetivos, Estrategias y Tecnicas a Ser Utilizadas  Durante la Intervencion
+					h2 Objetivos, Estrategias y Técnicas a Ser Utilizadas  Durante la Intervención:
 						table(border="1")
 							tr 
 								th objetivo 
 								th Estrategias
-								th Tecnicas
+								th Técnicas
 							tr 
 								td 
-									input(type="text") 
+									textarea 
 								td 
-									input(type="text") 
+									textarea
 								td 
-									input(type="text")
-			section#mencionar_jus
+									textarea
+						button(data-bind="click: addSeat") add
+			section.flex-item
 				form
-					h2 Mencionar y Justificar los Referidos que se Realizaran:
-					input(type="text")
-			section#metodos_evaluar
+					h2 Mencionar y Justificar los Referidos que se Realizarán:
+					textarea
+			section.flex-item
 				form
-					h2 Metodos para Evaluar el progreso del Mejoramiento del/la participante:
-					input(type="text")
+					h2 Métodos para Evaluar el progreso del Mejoramiento del/la participante:
+					textarea

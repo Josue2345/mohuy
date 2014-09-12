@@ -1,15 +1,27 @@
 <!DOCTYPE html >
-<html lang="es">
+<html>
   <head>
-    <link rel="stylesheet" type="text/css" href="nota_progreso.css"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/test.css"/>
     <title>Nota de Progreso</title>
   </head>
   <body> 
     <h1>NOTA DE PROGRESO</h1>
-    <article>
+    <article class="flex-container flex-item">
       <section>
+        <h4>Nombre del Participante:</h4>
+        <select data-bind="value: name"></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date"/>
+      </section>
+    </article>
+    <article class="flex-container">
+      <section class="flex-item">
         <form>
-          <h4>Tipo de entrevista:
+          <h4>Tipo de entrevista:</h4>
+          <p>
             <input type="checkbox" name="interv" value=""/>
             <label for="interv">Inicial</label>
             <input type="checkbox" name="interv" value=""/>
@@ -17,46 +29,40 @@
             <input type="checkbox" name="interv" value=""/>
             <label for="interv">Cierre</label>
             <input type="checkbox" name="interv" value=""/>
-            <label for="interv">Transferencia</label>
+            <label for="interv">Transferencia</label><br/>
             <input type="checkbox" name="interv" value=""/>
-            <label for="interv">Llamada telefónica</label>
+            <label for="interv">Llamadas Telefónicas</label>
             <input type="checkbox" name="interv" value=""/>
-            <label for="interv">Correo electrónico</label>
+            <label for="interv">Correo Electrónico</label>
             <input type="checkbox" name="interv" value=""/>
             <label for="interv">Encuentro Casual</label>
-          </h4>
+          </p>
         </form>
-      </section>
-      <section>
-        <from>
-          <h4>Fecha de la Entrvista</h4>
-          <input type="date"/>
-        </from>
       </section>
     </article>
-    <article>
-      <section>
+    <article class="flex-container">
+      <section class="flex-item">
         <form>
           <h2>Resumen de Intervención:</h2>
-          <input type="text"/>
+          <textarea></textarea>
         </form>
       </section>
-      <section>
+      <section class="flex-item">
         <form>
           <h2>Acuerdos Tomados con el/la Participante:</h2>
-          <input type="text"/>
+          <textarea></textarea>
         </form>
       </section>
-      <section> 
+      <section class="flex-item">
         <form>
           <h2>Ponderación:
             <p> 
-              <label for="concu">Factores Concurentes</label>
-              <input type="text"/>
-              <label for="critic">Factores Criticos</label>
-              <input type="text"/>
-              <label for="ana_prob">Análisis del Problema o la Situación desde un Marco Teórico:</label>
-              <input type="text"/>
+              <label for="concurente">Factores Concurentes:</label>
+              <textarea></textarea><br/>
+              <label for="critico">Factores Críticos:</label>
+              <textarea></textarea><br/>
+              <label for="analisis">Análisis del Problema o la Situación desde un Marco Teórico:</label>
+              <textarea></textarea>
             </p>
           </h2>
         </form>

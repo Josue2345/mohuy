@@ -1,29 +1,37 @@
 doctype html
 
-html(lang="es")
+html
 	head
-		link(rel="stylesheets" type="text/css" href="informe_de_cierre.css")
+		meta(http-equiv="content-type" content="text/html;charset=utf-8")
+		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Informe de Cierre 
 	body
-		h1 INFORME DE CIERRE
-		article
-			section#Resumen_de_intervencion
+		header INFORME DE CIERRE
+		article.flex-container.flex-item
+			section
+				h4 Nombre del Participante:
+				select(data-bind="value: name")
+			section#fecha
+				h4 Fecha:
+				input(type="date")
+		article.flex-container
+			section.flex-item
 				form
-					h2 Resumen de Intervecion:
-					input(type="text")
-			section#ponderacion
+					h2 Resumen de Interveción:
+					textarea
+			section.flex-item
 				form
-					h2 Ponderacion:
-					input(type="text")
-			section#logros
+					h2 Ponderación:
+					textarea
+			section.flex-item
 				form
 					h2 Logros
-					input(type="text")
-			section#motivo_del_cierre
+					textarea
+			section.flex-item
 				form
 					h2 Motivo del Cierre:
-					input(type="text") 
-			section#recomendaciones
+					textarea 
+			section.flex-item
 				form
 					h2 Recomendaciones:
-					input(type="text")
+					textarea

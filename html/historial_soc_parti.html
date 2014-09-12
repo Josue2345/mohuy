@@ -1,62 +1,79 @@
 <!DOCTYPE html >
-<html lang="es">
+<html>
   <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="../css/test.css"/>
     <title>Historial Social del Participante</title>
   </head>
   <body> 
-    <h1>HISTORIAL SOCIAL DEL PARTICIPANTE</h1>
-    <article>
-      <section id="motivo_ref">
+    <header>HISTORIAL SOCIAL DEL PARTICIPANTE </header>
+    <article class="flex-container flex-item">
+      <section>
+        <h4>Nombre del Participante:</h4>
+        <select data-bind="value: name"></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date"/>
+      </section>
+    </article>
+    <article class="flex-container">
+      <section>
         <form>
-          <h2>Motivo del Referido:</h2>
-          <input type="text"/>
+          <div class="flex-item">
+            <h2>Motivo del Referido:</h2>
+            <textarea></textarea>
+          </div>
         </form>
       </section>
-      <section id="resumen_inter">
+      <section>
         <form>
-          <h2>Resumen de Intervención:</h2>
-          <input type="text"/>
+          <div class="flex-item">
+            <h2>Resumen de Interveción:</h2>
+            <textarea></textarea>
+          </div>
         </form>
       </section>
-      <section id="historal_bio">
-        <form>
+      <section>
+        <form class="flex-item">
           <h2>Historial Bio-Psicosocial:
-            <p> 
-              <label for="family">Historial Familiar:</label>
-              <input type="text"/>
-              <label for="academi">Historial Académico y Ocupacional</label>
-              <input type="text"/>
-              <label for="live">Vivienda</label>
-              <input type="text"/>
-              <label for="health">Historial de Salud Física</label>
-              <input type="text"/>
-              <label for="mental">Historial de Salud Mental</label>
-              <input type="text"/>
-            </p>
-          </h2>
-        </form>
-      </section>
-      <section id="ponderacion"> 
-        <form>
-          <h2>Ponderación:
             <p>
-              <label for="general">Descripción General del Problema:</label>
-              <input type="text"/>
-              <label for="factor">Factores Concurrentes:</label>
-              <input type="text"/>
-              <label for="critic">Factores Críticos:</label>
-              <input type="text"/>
-              <label for="problem">Análisis del Problema Desde un Marco Teórico:</label>
-              <input type="text"/>
+              <label for="family">Historial Familiar:</label>
+              <textarea></textarea><br/>
+              <label for="academi">Historial Academico y Ocupacional:</label>
+              <textarea> </textarea><br/>
+              <label for="live">Vivienda:</label>
+              <textarea></textarea><br/>
+              <label for="health">Historial de Salud Física:</label>
+              <textarea></textarea><br/>
+              <label for="mental">Historial de Salud Mental:</label>
+              <textarea></textarea>
             </p>
           </h2>
         </form>
       </section>
-      <section id="recomendacion">
+      <section>
+        <form class="flex-item">
+          <h2>Ponderación:
+            <p> 
+              <label for="general">Descripción General del Problema:</label>
+              <textarea></textarea><br/>
+              <label for="factor">Factores Concurrentes:</label>
+              <textarea></textarea><br/>
+              <label for="critic">Factores Críticos:</label>
+              <textarea></textarea><br/>
+              <label for="problem">Análisis del Problema Desde un Marco teórico:</label>
+              <textarea></textarea>
+            </p>
+          </h2>
+        </form>
+      </section>
+      <section>
         <form>
-          <h2>Recomendaciones:</h2>
-          <input type="text"/>
+          <div class="flex-item">
+            <h2>Recomendaciones:</h2>
+            <textarea></textarea>
+          </div>
         </form>
       </section>
     </article>

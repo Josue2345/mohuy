@@ -1,21 +1,29 @@
 doctype html
 
-html(lang="es")
+html
 	head
-		link(rel="stylesheet" type="text/css" href="Informe_de_visita_hogar.css")
+		meta(http-equiv="content-type" content="text/html;charset=utf-8")
+		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Informe de visita al hogar
 	body
-		h1 INFORME DE VISITA AL HOGAR:
-		article
-			section#resumen_de_inter
+		header INFORME DE VISITA AL HOGAR:
+		article.flex-container.flex-item
+			section
+				h4 Nombre del Participante:
+				select(data-bind="value: name")
+			section#fecha
+				h4 Fecha:
+				input(type="date")
+		article.flex-container
+			section.flex-item
 				form
-					h2 Resumen De Intervencion:
-					input(type="text")
-			section#acuerdos_tomados
+					h2 Resumen De Intervención:
+					textarea
+			section.flex-item
 				form
 					h2 Acuerdos Tomados Con El/La Participante:
-					input(type="text")
-			section#Ponderacion
+					textarea
+			section.flex-item
 				form
-					h2 Ponderacion:
-					input(type="text")
+					h2 Ponderación:
+					textarea

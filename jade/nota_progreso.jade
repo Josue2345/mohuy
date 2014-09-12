@@ -1,15 +1,24 @@
 doctype html 
 
-html(lang="es")
+html
 	head
-		link(rel="stylesheet" type="text/css" href="nota_progreso.css")
+		meta(http-equiv="content-type" content="text/html;charset=utf-8")
+		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Nota de Progreso
 	body 
 		h1 NOTA DE PROGRESO
-		article
+		article.flex-container.flex-item
 			section
+				h4 Nombre del Participante:
+				select(data-bind="value: name")
+			section#fecha
+				h4 Fecha:
+				input(type="date")
+		article.flex-container
+			section.flex-item
 				form
 					h4 Tipo de entrevista:
+					p
 						input(type="checkbox" name="interv" value="")
 						label(for="interv") Inicial
 						input(type="checkbox" name="interv" value="")
@@ -18,27 +27,31 @@ html(lang="es")
 						label(for="interv") Cierre
 						input(type="checkbox" name="interv" value="")
 						label(for="interv") Transferencia
+						br
 						input(type="checkbox" name="interv" value="")
-			section
-				from
-					h4 Fecha de la Entrvista
-					input(type="date")
-		article
-			section
+						label(for="interv") Llamadas Telefónicas
+						input(type="checkbox" name="interv" value="")
+						label(for="interv") Correo Electrónico
+						input(type="checkbox" name="interv" value="")
+						label(for="interv") Encuentro Casual
+		article.flex-container
+			section.flex-item
 				form
-					h2 Resumen de Intervencion:
-					input(type="text")
-			section
+					h2 Resumen de Intervención:
+					textarea
+			section.flex-item
 				form
 					h2 Acuerdos Tomados con el/la Participante:
-					input(type="text")
-			section 
+					textarea
+			section.flex-item
 				form
-					h2 Ponderacion:
+					h2 Ponderación:
 						p 
-							label(for="concu") Factores Concurentes
-							input(type="text") 
-							label(for="critic") Factores Criticos
-							input(type="text")
-							label(for="ana_prob") Analisis del Problema o la Situacion desde un Marco Teorico:
-							input(type="text")
+							label(for="concurente") Factores Concurentes:
+							textarea
+							br
+							label(for="critico") Factores Críticos:
+							textarea
+							br
+							label(for="analisis") Análisis del Problema o la Situación desde un Marco Teórico:
+							textarea

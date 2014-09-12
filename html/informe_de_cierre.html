@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
-    <link rel="stylesheets" type="text/css" href="../css/test.css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/test.css">
     <title>Informe de Cierre </title>
   </head>
   <body>
-    <h1>INFORME DE CIERRE</h1>
-    <article>
-      <section id="Resumen_de_intervencion">
+    <header>INFORME DE CIERRE</header>
+    <article class="flex-container flex-item">
+      <section>
+        <h4>Nombre del Participante:</h4>
+        <select data-bind="value: name"></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date">
+      </section>
+    </article>
+    <article class="flex-container">
+      <section class="flex-item">
         <form>
           <h2>Resumen de Interveción:</h2>
-          <input type="text">
+          <textarea></textarea>
         </form>
       </section>
-      <section id="ponderacion">
+      <section class="flex-item">
         <form>
           <h2>Ponderación:</h2>
-          <input type="text">
+          <textarea></textarea>
         </form>
       </section>
-      <section id="logros">
+      <section class="flex-item">
         <form>
           <h2>Logros</h2>
-          <input type="text">
+          <textarea></textarea>
         </form>
       </section>
-      <section id="motivo_del_cierre">
+      <section class="flex-item">
         <form>
           <h2>Motivo del Cierre:</h2>
-          <input type="text">
+          <textarea> </textarea>
         </form>
       </section>
-      <section id="recomendaciones">
+      <section class="flex-item">
         <form>
           <h2>Recomendaciones:</h2>
-          <input type="text">
+          <textarea></textarea>
         </form>
       </section>
     </article>

@@ -1,72 +1,84 @@
 <!DOCTYPE html >
-<html lang="es">
+<html>
   <head>
-    <link rel="stylesheet" type="text/css" href="plan_de_servicio.css"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="../css/test.css"/>
     <title>Plan de Servicios</title>
   </head>
   <body> 
-    <h1>PLAN DE SERVICIOS</h1>
-    <article>
-      <section id="desc_gen_prob">
+    <header>PLAN DE SERVICIOS</header>
+    <article class="flex-container flex-item">
+      <section>
+        <h4>Nombre del Participante:</h4>
+        <select data-bind="value: name"></select>
+      </section>
+      <section id="fecha">
+        <h4>Fecha:</h4>
+        <input type="date"/>
+      </section>
+    </article>
+    <article class="flex-container">
+      <section class="flex-item">
         <form>
-          <h2>Describcion General Del Problema o la Situacion:</h2>
-          <input type="text"/>
+          <h2>Describción General Del Problema o la Situación:</h2>
+          <textarea></textarea>
         </form>
       </section>
-      <section id="ponderacion">
+      <section class="flex-item">
         <form>
-          <h2>Ponderacion 
+          <h2>Ponderación 
             <p> 
-              <label for="concu">Factores Concurentes</label>
-              <input type="text"/>
-              <label for="critic">Factores Criticos</label>
-              <input type="text"/>
-              <label for="problem">Analisis del Problema o la Situacion desde un Marco Teorico:</label>
+              <label for="concu">Factores Concurentes:</label>
+              <input type="text"/><br/>
+              <label for="critic">Factores Críticos:</label>
+              <input type="text"/><br/>
+              <label for="problem">Análisis del Problema o la Situación desde un Marco Teórico:</label>
               <input type="text"/>
             </p>
           </h2>
         </form>
       </section>
-      <section id="metas_participante"> 
+      <section class="flex-item"> 
         <form>
           <h2>Metas (A mediano o Largo Plazo) del/la Participante en Orden de Prioridad:</h2>
           <input type="text"/>
         </form>
       </section>
-      <section id="objetivo_est_tec">
+      <section>
         <form>
-          <h2>Objetivos, Estrategias y Tecnicas a Ser Utilizadas  Durante la Intervencion
+          <h2>Objetivos, Estrategias y Técnicas a Ser Utilizadas  Durante la Intervención:
             <table border="1">
               <tr> 
                 <th>objetivo </th>
                 <th>Estrategias</th>
-                <th>Tecnicas</th>
+                <th>Técnicas</th>
               </tr>
               <tr> 
                 <td> 
-                  <input type="text"/>
+                  <textarea> </textarea>
                 </td>
                 <td> 
-                  <input type="text"/>
+                  <textarea></textarea>
                 </td>
                 <td> 
-                  <input type="text"/>
+                  <textarea></textarea>
                 </td>
               </tr>
             </table>
+            <button data-bind="click: addSeat">add</button>
           </h2>
         </form>
       </section>
-      <section id="mencionar_jus">
+      <section class="flex-item">
         <form>
-          <h2>Mencionar y Justificar los Referidos que se Realizaran:</h2>
-          <input type="text"/>
+          <h2>Mencionar y Justificar los Referidos que se Realizarán:</h2>
+          <textarea></textarea>
         </form>
       </section>
-      <section id="metodos_evaluar">
+      <section class="flex-item">
         <form>
-          <h2>Metodos para Evaluar el progreso del Mejoramiento del/la participante:</h2>
-          <input type="text"/>
+          <h2>Métodos para Evaluar el progreso del Mejoramiento del/la participante:</h2>
+          <textarea></textarea>
         </form>
       </section>
     </article>
