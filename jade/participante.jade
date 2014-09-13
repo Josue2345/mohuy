@@ -5,41 +5,48 @@ html
 		link(rel="stylesheet", type="text/css", href="../css/test.css")
 		title Datos Personales
 	body
-		header Datos Personales
-		article.flex-container
+		header#header DATOS PERSONALES 
+		hr 
+		fieldset#setlines.flex-container
 			section
 				h4 Fecha:
 				input(type="date")
-		article
-			section.flex-container
+		article.flex-container
+			section.flex-item
 				form
-					.flex-item
+					p
 						label(for="name") Nombre:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="nickename") Apodo:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="direction") Dirección Residencial:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="postal") Dirección Postal:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="age") Edad:
 						input(type="number")
-					.flex-item
+					hr
+					p
 						label(for="date") Fecha de Nacimiento:
 						input(type="date")
-					.flex-item
-						label Sexo:
-						input(type="radio" name="gender" value="male") 
-						label(for="gender") Male
-						input(type="radio" name="gender" value="female")
-						label(for="gender") Female
-					P
-						label Estado Civil:
-						.flex-item
+					hr
+					h2 Sexo:
+						.estructura
+							input(type="radio" name="gender" value="male") 
+							label(for="gender") Male
+							input(type="radio" name="gender" value="female")
+							label(for="gender") Female
+					hr
+					h2 Estado Civil:
+						.estructura
 							input(type="radio" name="civil" value="solteria")
 							label(for="civil") Soltero/a
 							input(type="radio" name="civil" value="casado")
@@ -55,33 +62,34 @@ html
 							label(for="civil") Consesual
 							input(type="radio" name="civil" value="separado")
 							label(for="civil") Separado/a
-					P
-						label Teléfono:
-						.flex-item
-							label(for="phone") Casa
+					hr
+					h2 Teléfono:
+						.estructura
+							label(for="phone") Casa:
 							input(type="text")
 							br
-							label(for="phone") Celular
+							label(for="phone") Celular:
 							input(type="text")
 							br
-							label(for="phone") Trabajo
+							label(for="phone") Trabajo:
 							input(type="text")
-					P
-						label Escolaridad:
-						.flex-item
+					hr
+					h2 Escolaridad:
+						.estructura
 							input(type="checkbox" name="school" value="elemental")
 							label(for="school") Escuela Elemenal
 							input(type="checkbox" name="school" value="intermedia")
 							label(for="school") Escuela Intermedia
 							input(type="checkbox" name="school" value="superior")
 							label(for="school") Escuela Superior
+							br
 							input(type="checkbox" name="school" value="gradoasoc")
 							label(for="school") Grado Asociado
-							br
 							input(type="checkbox" name="school" value="bachillerato")
 							label(for="school") Bachillerato
 							input(type="checkbox" name="school" value="maestria")
 							label(for="school") Maestria
+							br
 							input(type="checkbox" name="school" value="doctorado")
 							label(for="school") Doctorado
 							input(type="checkbox" name="school" value="none")
@@ -90,27 +98,33 @@ html
 							input(type="checkbox" name="school" value="other")
 							label(for="school") Otros:
 							input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="completogra") Grado completogra:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="estudioas") Escuela, Colegio o Universidad:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="profesion") Profesión:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="work") Lugar de Trabajo:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="religion") Afiliación Religiosa:
 						input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="medic") Plan Médico:
 						input(type="text")
-					p
-						label Medicare:
-						.flex-item
+					hr
+					h2 Medicare:
+						.estructura
 							input(type="checkbox" name="medicare" value="partea")
 							label(for="medicare") Parte A
 							input(type="checkbox" name="medicare" value="parteb")
@@ -121,39 +135,46 @@ html
 							input(type="checkbox" name="medicare" value="complementario")
 							label(for="medicare") Complementario:
 							input(type="text")
-					.flex-item
+					hr
+					p
 						label(for="exp") Fecha de Expiración:
 						input(type="date")
-					.flex-item
+					hr
+					p
 						label(for="fuentes") Fuente de Referido:
+						br
 						input(type="text")
 						br
 						label(for="phone") Teléfono:
 						input(type="text")
 						br
 						label(for="name_encar") Nombre Encargado/a Tutoriar:
+						br
 						input(type="text")
 						br 
-						label(for="phone") Teléfono
+						label(for="phone") Teléfono:
 						input(type="text")
 						br
 						label(for="person") Persona de Contacto en Caso de Emergencia:
+						br
 						input(type="text")
 						br
-						label(for="phone") Teléfono
+						label(for="phone") Teléfono:
 						input(type="text")
-					.flex-item
-						label(for="service") Servicio y/o Otras Agencias Envueltas
+					hr
+					p
+						label(for="service") Servicio y/o Otras Agencias Envueltas:
 						input(type="text")
-					P 
-						label Fuentes de Ingresos:
-						.flex-item
+					hr 
+					h2 Fuentes de Ingresos:
+						.estructura
 							input(type="checkbox" name="ingreso" value="sueldo")
 							label(for="ingreso")  Sueldo
 							input(type="checkbox" name="ingreso" value="seguro") 
 							label(for="ingreso") Seguro Social
 							input(type="checkbox" name="ingreso" value="pension")
 							label(for="ingreso") Pensión
+							br
 							input(type="checkbox" name="ingreso" value="alimenticia")
 							label(for="ingreso") Pensión Alimenticia
 							input(type="checkbox" name="ingreso" value="bienestar")
@@ -170,9 +191,10 @@ html
 							br
 							label Estimado Mensual: $
 							input(type="text")
-			section.flex-container-par-tab
+		article.flex-container
+			section
 				form
-					h2 Composición familiar 
+					h2 Composición familiar: 
 						table(border="1")
 							tr 
 								th Nombres
@@ -181,15 +203,16 @@ html
 								th Ocupación
 							tr
 								td 
-									input(type="text")
+									input.name(type="text")
 								td
 									input.line(type="number")
 								td
-									input(type="text")
+									input.name(type="text")
 								td
 									input(type="text")
 						button(data-bind="click: addSeat") add
-			section.flex-container
-				form.flex-item
+		article.flex-container
+			section.flex-item
+				form
 					h2 Motivo de consulta Según El/La Participante: 
-						textarea
+					textarea

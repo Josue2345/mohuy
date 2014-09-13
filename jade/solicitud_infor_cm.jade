@@ -6,41 +6,48 @@ html
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Solicitud de Informacion de la Congregacion Mita, Inc.
 	body
-		header SOLICITUD DE INFORMACIÓN DE LA CONGREGACIÓN MITA, INC.
-		article.flex-container.flex-item
-			section
+		header#header SOLICITUD DE INFORMACIÓN DE LA CONGREGACIÓN MITA, INC.
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select(data-bind="value: name")
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		article.flex-container
 			section.flex-item
 				form
 					h2 Motivo de la Consulta:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Información Acerca de la Institución Educativa:
-						p
+						.estructura
 							label(for="name") Nombre de la Institución Educativa:
-							input(type="text")
 							br
+							input(type="text")
+							hr
 							label(for="name") Recinto(si aplica):
-							input(type="text")
 							br
+							input(type="text")
+							hr
 							label(for="name") Pueblo:
-							input(type="text")
 							br
+							input(type="text")
+							hr
 							label(for="name") Titulo del Curso:
-							input(type="text")
 							br
+							input(type="text")
+							hr
 							label(for="name") Profesor(a) que Ofrece el Curso:
-							input(type="text")
 							br
+							input(type="text")
+							hr
 							label(for="name") Propósito del Trabajo:
-							textarea
+							br
+							textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Acción Tomada:
-					textarea
+					textarea(rows="4" cols="40")

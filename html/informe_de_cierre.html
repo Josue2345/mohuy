@@ -6,46 +6,47 @@
     <title>Informe de Cierre </title>
   </head>
   <body>
-    <header>INFORME DE CIERRE</header>
-    <article class="flex-container flex-item">
-      <section>
+    <header id="header">INFORME DE CIERRE</header>
+    <hr>
+    <fieldset id="setlines" class="flex-container">
+      <section id="nombre_participante">
         <h4>Nombre del Participante:</h4>
-        <select data-bind="value: name"></select>
+        <select data-bind="value: name" class="selector"></select>
       </section>
-      <section id="fecha">
+      <section>
         <h4>Fecha:</h4>
         <input type="date">
       </section>
-    </article>
+    </fieldset>
     <article class="flex-container">
       <section class="flex-item">
         <form>
           <h2>Resumen de Interveción:</h2>
-          <textarea></textarea>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
       <section class="flex-item">
         <form>
           <h2>Ponderación:</h2>
-          <textarea></textarea>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
       <section class="flex-item">
         <form>
           <h2>Logros</h2>
-          <textarea></textarea>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
       <section class="flex-item">
         <form>
           <h2>Motivo del Cierre:</h2>
-          <textarea> </textarea>
+          <textarea rows="4" cols="40"> </textarea>
         </form>
       </section>
       <section class="flex-item">
         <form>
           <h2>Recomendaciones:</h2>
-          <textarea></textarea>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
     </article>

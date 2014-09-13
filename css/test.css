@@ -1,18 +1,33 @@
 
-
+body {
+	
+}
 div {
-	color: blue;
-	font-family: serif;
-	font-style: italic;
+	color: #ff6699;
+	font-size: 0.8em;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: 2px 2px 7px #111111;
 }
 
 header {
-	color: blue;
+	color: white;
 	text-align: center;
 	font-size: 2.5em;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: 2px 2px 7px #111111;}
+
 }
 label {
 	color: green;
+}
+h2, p{
+	color: #ff9999;
+	font-size: 1.4em;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: 2px 2px 7px #111111;
 }
 
 .flex-container {
@@ -30,8 +45,8 @@ label {
   flex
 
   height: 100em;
-  width: 40em;
-  background-color: #E0E0E0;
+  width: 50em;
+  background-color: DarkCyan;
   box-shadow: 10px 10px 5px #888888;
   border-radius: 2em;
   box-sizing: border-box;
@@ -62,4 +77,19 @@ label {
 	width: 50px;
 }
 
-.flex-container-par-tab{}
+#nombre_participante {
+	width: 20em;
+}
+.selector {
+	width: 15em;
+}
+#header{
+	background-color: DarkCyan;
+	box-shadow: 5px 6px 10px #888888;
+}
+#setlines {
+	width: 5em;
+}
+.name {
+	width: 15em;
+}

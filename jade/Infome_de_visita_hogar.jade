@@ -6,24 +6,25 @@ html
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Informe de visita al hogar
 	body
-		header INFORME DE VISITA AL HOGAR:
-		article.flex-container.flex-item
-			section
+		header#header INFORME DE VISITA AL HOGAR:
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select(data-bind="value: name")
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		article.flex-container
 			section.flex-item
 				form
 					h2 Resumen De Intervención:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Acuerdos Tomados Con El/La Participante:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Ponderación:
-					textarea
+					textarea(rows="4" cols="40")

@@ -6,16 +6,17 @@ html
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Entrevista Inicial
 	body
-		header ENTREVISTA INICIAL
-		article.flex-container.flex-item
-			section
+		header#header ENTREVISTA INICIAL
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		br
-		article
+		article.flex-container
 			section
 				form
 						table(style="width:100%")
@@ -109,13 +110,13 @@ html
 						select
 							option(value="recibe") Recibe Tratamiento Actualmente
 							option(value="none") No Recibe Tratamiento Actualmente
-							input(type="text")
+							textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Accion Tomada:
-					input(type="text")
+					textarea(rows="4" cols="40")
 			section.flex-item 
 				form
 					h2 Plan a Seguir:
-					input(type="text")
+					textarea(rows="4" cols="40")
 

@@ -6,31 +6,35 @@ html
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Plan de Servicios
 	body 
-		header PLAN DE SERVICIOS
-		article.flex-container.flex-item
-			section
+		header#header PLAN DE SERVICIOS
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select(data-bind="value: name")
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		article.flex-container
 			section.flex-item
 				form
 					h2 Describción General Del Problema o la Situación:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
-					h2 Ponderación 
-						p 
+					h2 Ponderación: 
+						.estructura 
 							label(for="concu") Factores Concurentes:
-							input(type="text") 
 							br
+							textarea(rows="4" cols="40")
+							hr
 							label(for="critic") Factores Críticos:
-							input(type="text") 
 							br
+							textarea(rows="4" cols="40")
+							hr
 							label(for="problem") Análisis del Problema o la Situación desde un Marco Teórico:
-							input(type="text")
+							br
+							textarea(rows="4" cols="40")
 			section.flex-item 
 				form
 					h2 Metas (A mediano o Largo Plazo) del/la Participante en Orden de Prioridad:
@@ -45,7 +49,7 @@ html
 								th Técnicas
 							tr 
 								td 
-									textarea 
+									textarea
 								td 
 									textarea
 								td 
@@ -54,8 +58,8 @@ html
 			section.flex-item
 				form
 					h2 Mencionar y Justificar los Referidos que se Realizarán:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Métodos para Evaluar el progreso del Mejoramiento del/la participante:
-					textarea
+					textarea(rows="4" cols="40")

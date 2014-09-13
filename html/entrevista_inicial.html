@@ -6,18 +6,19 @@
     <title>Entrevista Inicial</title>
   </head>
   <body>
-    <header>ENTREVISTA INICIAL</header>
-    <article class="flex-container flex-item">
-      <section>
+    <header id="header">ENTREVISTA INICIAL</header>
+    <hr>
+    <fieldset id="setlines" class="flex-container">
+      <section id="nombre_participante">
         <h4>Nombre del Participante:</h4>
-        <select></select>
+        <select data-bind="value: name" class="selector"></select>
       </section>
-      <section id="fecha">
+      <section>
         <h4>Fecha:</h4>
         <input type="date">
       </section>
-    </article><br>
-    <article>
+    </fieldset><br>
+    <article class="flex-container">
       <section>
         <form>
           <table style="width:100%">
@@ -148,7 +149,7 @@
             <select>
               <option value="recibe">Recibe Tratamiento Actualmente</option>
               <option value="none">No Recibe Tratamiento Actualmente</option>
-              <input type="text">
+              <textarea rows="4" cols="40"></textarea>
             </select>
           </h2>
         </form>
@@ -156,13 +157,13 @@
       <section class="flex-item">
         <form>
           <h2>Accion Tomada:</h2>
-          <input type="text">
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
       <section class="flex-item"> 
         <form>
           <h2>Plan a Seguir:</h2>
-          <input type="text">
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
     </article>

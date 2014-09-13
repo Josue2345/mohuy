@@ -6,48 +6,54 @@
     <title>Solicitud de Informacion de la Congregacion Mita, Inc.</title>
   </head>
   <body>
-    <header>SOLICITUD DE INFORMACIÓN DE LA CONGREGACIÓN MITA, INC.</header>
-    <article class="flex-container flex-item">
-      <section>
+    <header id="header">SOLICITUD DE INFORMACIÓN DE LA CONGREGACIÓN MITA, INC.</header>
+    <hr>
+    <fieldset id="setlines" class="flex-container">
+      <section id="nombre_participante">
         <h4>Nombre del Participante:</h4>
-        <select data-bind="value: name"></select>
+        <select data-bind="value: name" class="selector"></select>
       </section>
-      <section id="fecha">
+      <section>
         <h4>Fecha:</h4>
         <input type="date">
       </section>
-    </article>
+    </fieldset>
     <article class="flex-container">
       <section class="flex-item">
         <form>
           <h2>Motivo de la Consulta:</h2>
-          <textarea></textarea>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
       <section class="flex-item">
         <form>
           <h2>Información Acerca de la Institución Educativa:
-            <p>
-              <label for="name">Nombre de la Institución Educativa:</label>
-              <input type="text"><br>
-              <label for="name">Recinto(si aplica):</label>
-              <input type="text"><br>
-              <label for="name">Pueblo:</label>
-              <input type="text"><br>
-              <label for="name">Titulo del Curso:</label>
-              <input type="text"><br>
-              <label for="name">Profesor(a) que Ofrece el Curso:</label>
-              <input type="text"><br>
-              <label for="name">Propósito del Trabajo:</label>
-              <textarea></textarea>
-            </p>
+            <div class="estructura">
+              <label for="name">Nombre de la Institución Educativa:</label><br>
+              <input type="text">
+              <hr>
+              <label for="name">Recinto(si aplica):</label><br>
+              <input type="text">
+              <hr>
+              <label for="name">Pueblo:</label><br>
+              <input type="text">
+              <hr>
+              <label for="name">Titulo del Curso:</label><br>
+              <input type="text">
+              <hr>
+              <label for="name">Profesor(a) que Ofrece el Curso:</label><br>
+              <input type="text">
+              <hr>
+              <label for="name">Propósito del Trabajo:</label><br>
+              <textarea rows="4" cols="40"></textarea>
+            </div>
           </h2>
         </form>
       </section>
       <section class="flex-item">
         <form>
           <h2>Acción Tomada:</h2>
-          <textarea></textarea>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
     </article>

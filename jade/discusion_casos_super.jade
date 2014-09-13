@@ -1,33 +1,34 @@
 doctype html
 
-html(lang="spanish")
+html
 	head
 		meta(http-equiv="content-type" content="text/html;charset=utf-8")
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Discusion de Casos con el Supervisor
 	body
-		header DISCUSION DE CASOS CON EL/LA SUPERVISOR/A
-		article.flex-container.flex-item
-			section
+		header#header DISCUSION DE CASOS CON EL/LA SUPERVISOR/A
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select(data-bind="value: name")
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		article.flex-container
 			section.flex-item
 				form
 					h2 Resumen de la Situación:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 ¿Quién/es es/son la/s Persona/s Más Afectada/s con la Situación?:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Recomendacion del/la Trabajador/a Social:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Recomendaciones de/la Supervisor/a 
-					textarea
+					textarea(rows="4" cols="40")

@@ -6,32 +6,33 @@ html
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Informe de Transferencia 
 	body
-		header INFORME DE TRANSFERENCIA
-		article.flex-container.flex-item
-			section
+		header#header INFORME DE TRANSFERENCIA
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select(data-bind="value: name")
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		article.flex-container
 			section.flex-item
 				form
 					h2 Resumen de la Labor Realizada:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Ponderación:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Logros:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Motivo de la Transferencia:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Recomendaciones:
-					textarea
+					textarea(rows="4" cols="40")

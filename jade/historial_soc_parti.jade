@@ -6,60 +6,67 @@ html
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Historial Social del Participante
 	body 
-		header HISTORIAL SOCIAL DEL PARTICIPANTE 
-		article.flex-container.flex-item
-			section
+		header#header HISTORIAL SOCIAL DEL PARTICIPANTE 
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select(data-bind="value: name")
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		article.flex-container
 			section
-				form
-					.flex-item
+				form.flex-item
 						h2 Motivo del Referido:
-						textarea
+						textarea(rows="4" cols="40")
 			section
-				form
-					.flex-item
+				form.flex-item
 						h2 Resumen de Interveción:
-						textarea
+						textarea(rows="4" cols="40")
 			section
 				form.flex-item
 					h2 Historial Bio-Psicosocial:
 						p
 								label(for="family") Historial Familiar:
-								textarea
-								br
-								label(for="academi") Historial Academico y Ocupacional:
-								textarea 
-								br
-								label(for="live") Vivienda:
-								textarea
-								br
-								label(for="health") Historial de Salud Física:
-								textarea
 								br 
+								textarea(rows="4" cols="40")
+								hr
+								label(for="academi") Historial Academico y Ocupacional:
+								br
+								textarea(rows="4" cols="40")
+								hr
+								label(for="live") Vivienda:
+								br
+								textarea(rows="4" cols="40")
+								hr
+								label(for="health") Historial de Salud Física:
+								br
+								textarea(rows="4" cols="40")
+								hr 
 								label(for="mental") Historial de Salud Mental:
-								textarea
+								br
+								textarea(rows="4" cols="40")
 			section
 				form.flex-item
 					h2 Ponderación:
 						p 
 							label(for="general") Descripción General del Problema:
-							textarea
 							br
+							textarea(rows="4" cols="40")
+							hr
 							label(for="factor") Factores Concurrentes:
-							textarea
 							br
+							textarea(rows="4" cols="40")
+							hr
 							label(for="critic") Factores Críticos:
-							textarea
 							br
+							textarea(rows="4" cols="40")
+							hr
 							label(for="problem") Análisis del Problema Desde un Marco teórico:
-							textarea
+							br
+							textarea(rows="4" cols="40")
 			section
-				form
-					.flex-item
+				form.flex-item
 						h2 Recomendaciones:
-						textarea
+						textarea(rows="4" cols="40")

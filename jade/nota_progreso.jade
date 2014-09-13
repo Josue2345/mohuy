@@ -6,52 +6,56 @@ html
 		link(rel="stylesheet" type="text/css" href="../css/test.css")
 		title Nota de Progreso
 	body 
-		h1 NOTA DE PROGRESO
-		article.flex-container.flex-item
-			section
+		header#header NOTA DE PROGRESO
+		hr 
+		fieldset#setlines.flex-container
+			section#nombre_participante
 				h4 Nombre del Participante:
-				select(data-bind="value: name")
-			section#fecha
+				select.selector(data-bind="value: name")
+			section
 				h4 Fecha:
 				input(type="date")
 		article.flex-container
 			section.flex-item
 				form
-					h4 Tipo de entrevista:
-					p
-						input(type="checkbox" name="interv" value="")
-						label(for="interv") Inicial
-						input(type="checkbox" name="interv" value="")
-						label(for="interv") Seguimiento
-						input(type="checkbox" name="interv" value="")
-						label(for="interv") Cierre
-						input(type="checkbox" name="interv" value="")
-						label(for="interv") Transferencia
-						br
-						input(type="checkbox" name="interv" value="")
-						label(for="interv") Llamadas Telefónicas
-						input(type="checkbox" name="interv" value="")
-						label(for="interv") Correo Electrónico
-						input(type="checkbox" name="interv" value="")
-						label(for="interv") Encuentro Casual
+					h2 Tipo de entrevista:
+						.estructura
+							input(type="checkbox" name="interv" value="")
+							label(for="interv") Inicial
+							input(type="checkbox" name="interv" value="")
+							label(for="interv") Seguimiento
+							input(type="checkbox" name="interv" value="")
+							label(for="interv") Cierre
+							input(type="checkbox" name="interv" value="")
+							label(for="interv") Transferencia
+							br
+							input(type="checkbox" name="interv" value="")
+							label(for="interv") Llamadas Telefónicas
+							input(type="checkbox" name="interv" value="")
+							label(for="interv") Correo Electrónico
+							input(type="checkbox" name="interv" value="")
+							label(for="interv") Encuentro Casual
 		article.flex-container
 			section.flex-item
 				form
 					h2 Resumen de Intervención:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Acuerdos Tomados con el/la Participante:
-					textarea
+					textarea(rows="4" cols="40")
 			section.flex-item
 				form
 					h2 Ponderación:
-						p 
+						.estructura
 							label(for="concurente") Factores Concurentes:
-							textarea
 							br
+							textarea(rows="4" cols="40")
+							hr
 							label(for="critico") Factores Críticos:
-							textarea
 							br
+							textarea(rows="4" cols="40")
+							hr
 							label(for="analisis") Análisis del Problema o la Situación desde un Marco Teórico:
-							textarea
+							br
+							textarea(rows="4" cols="40")

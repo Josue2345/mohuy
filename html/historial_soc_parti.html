@@ -6,48 +6,49 @@
     <title>Historial Social del Participante</title>
   </head>
   <body> 
-    <header>HISTORIAL SOCIAL DEL PARTICIPANTE </header>
-    <article class="flex-container flex-item">
-      <section>
+    <header id="header">HISTORIAL SOCIAL DEL PARTICIPANTE </header>
+    <hr/>
+    <fieldset id="setlines" class="flex-container">
+      <section id="nombre_participante">
         <h4>Nombre del Participante:</h4>
-        <select data-bind="value: name"></select>
+        <select data-bind="value: name" class="selector"></select>
       </section>
-      <section id="fecha">
+      <section>
         <h4>Fecha:</h4>
         <input type="date"/>
       </section>
-    </article>
+    </fieldset>
     <article class="flex-container">
       <section>
-        <form>
-          <div class="flex-item">
-            <h2>Motivo del Referido:</h2>
-            <textarea></textarea>
-          </div>
+        <form class="flex-item">
+          <h2>Motivo del Referido:</h2>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
       <section>
-        <form>
-          <div class="flex-item">
-            <h2>Resumen de Interveción:</h2>
-            <textarea></textarea>
-          </div>
+        <form class="flex-item">
+          <h2>Resumen de Interveción:</h2>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
       <section>
         <form class="flex-item">
           <h2>Historial Bio-Psicosocial:
             <p>
-              <label for="family">Historial Familiar:</label>
-              <textarea></textarea><br/>
-              <label for="academi">Historial Academico y Ocupacional:</label>
-              <textarea> </textarea><br/>
-              <label for="live">Vivienda:</label>
-              <textarea></textarea><br/>
-              <label for="health">Historial de Salud Física:</label>
-              <textarea></textarea><br/>
-              <label for="mental">Historial de Salud Mental:</label>
-              <textarea></textarea>
+              <label for="family">Historial Familiar:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
+              <hr/>
+              <label for="academi">Historial Academico y Ocupacional:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
+              <hr/>
+              <label for="live">Vivienda:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
+              <hr/>
+              <label for="health">Historial de Salud Física:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
+              <hr/>
+              <label for="mental">Historial de Salud Mental:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
             </p>
           </h2>
         </form>
@@ -56,24 +57,25 @@
         <form class="flex-item">
           <h2>Ponderación:
             <p> 
-              <label for="general">Descripción General del Problema:</label>
-              <textarea></textarea><br/>
-              <label for="factor">Factores Concurrentes:</label>
-              <textarea></textarea><br/>
-              <label for="critic">Factores Críticos:</label>
-              <textarea></textarea><br/>
-              <label for="problem">Análisis del Problema Desde un Marco teórico:</label>
-              <textarea></textarea>
+              <label for="general">Descripción General del Problema:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
+              <hr/>
+              <label for="factor">Factores Concurrentes:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
+              <hr/>
+              <label for="critic">Factores Críticos:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
+              <hr/>
+              <label for="problem">Análisis del Problema Desde un Marco teórico:</label><br/>
+              <textarea rows="4" cols="40"></textarea>
             </p>
           </h2>
         </form>
       </section>
       <section>
-        <form>
-          <div class="flex-item">
-            <h2>Recomendaciones:</h2>
-            <textarea></textarea>
-          </div>
+        <form class="flex-item">
+          <h2>Recomendaciones:</h2>
+          <textarea rows="4" cols="40"></textarea>
         </form>
       </section>
     </article>
